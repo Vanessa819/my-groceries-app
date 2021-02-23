@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+.Header {
+  height: 150px;
+  background-color: #333;
+  color: whitesmoke;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grocerylist {
+  border-radius: 5px;
+  min-width: 500px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.shoppingcart {
+  border-radius: 5px;
+  min-width: 500px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.App {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  width: 90%;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+ul li::after {
+  display: block;
+  clear: both;
+}
+
+ul li {
+  overflow: hidden;
+}
+
+ul li {
+  justify-content: space-between;
+  display: flex;
+}
+
+.grocerylist li {
+  cursor: pointer;
+}
+
+.grocerylist li:nth-of-type(odd) {
+  background: #f8bbd0 ;
+}
+
+.grocerylist li:nth-of-type(even) {
+  background: #fce4ec;
+}
+
+.shoppingcart li:nth-of-type(odd) {
+  background: #b2ebf2;
+}
+
+.shoppingcart li:nth-of-type(even) {
+  background:#4dd0e1  ;
+}
+
+button {
+  background-color: lightgray;
+  border-radius: 4px;
+  margin-left: 3px;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.shoppingcart button {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  width: 75%;
+  padding: 10px 20px;
+  margin-left: 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: rgb(247, 247, 247);
+  outline-offset: 0px;
+  outline: none;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
